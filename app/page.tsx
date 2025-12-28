@@ -45,8 +45,11 @@ export default function Page() {
             ? Array.from({ length: 4 }).map((_, i) => (
               <div
                 key={i}
-                className="w-16 h-16 rounded-full bg-gray-700 animate-pulse shrink-0"
-              />
+                className="w-24 h-48 rounded-lg shimmer shrink-0"
+              >
+                {/* name shimmer */}
+                <div className="mt-2 h-3 w-20 mx-auto rounded shimmer" />
+              </div>
             ))
             : stories.map((story, index) => (
               <button
